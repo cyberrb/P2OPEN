@@ -1,4 +1,4 @@
-/* style.css */
+
 .myBleu{
   color: #0065fc;
 }
@@ -9,14 +9,17 @@
 body,main
 {
   font-family: "Raleway", "Sans serif", "arial";
-  margin: 0 auto;
+ 
 }
 
 body
 {
   box-sizing: border-box;
+  
 }
-
+.Main{
+  padding: 0 1rem;
+}
 .Header
 {
   
@@ -168,57 +171,38 @@ display: inline-flex;
   }
   .FicheHebergementFigure
   {
-    display: block;
-margin-block-start: 1em;
-margin-block-end: 1em;
-margin-inline-start: 0px;
-margin-inline-end: 0px;
+    margin: 3px;
+    
   }
   .FicheHebergement{
-  
-  margin: 15px;
-  background-color: white;
-  background-size: 20%;
-  display:flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  background-color: white;
-  background-attachment: auto;
-   
-    border-radius: 1.25rem;
-    box-shadow: 0 0 16px #0000002e;  /* ombre du fond */
-    
-    cursor: pointer;
-   
-    height: 19rem;
-    width: 19rem;
+display: inline-block;
 
+  margin: 12px;
+
+  background-color: white;
+ 
+  border-radius: 19.5px;
+  box-shadow: 0 0 16px #0000002e;  /* ombre du fond */
+  width: 19rem;
 }
+
 .FicheHebergementImage
 {
-  display: block;
-  text-align-last: right;
-  min-block-size: 9rem;
-    max-block-size: 9rem;
-    width: 100%;
-    height: 50%;
-   
-
-border-radius: 1rem 1rem 0 0;
-}
-
-.FicheHebergementPrix, .FicheHebergementNuit
-{
+  
+  max-block-size: 9rem;
+  width: 100%;
+  border-radius: 18px 18px 0 0;
 
 }
+
+
 
 .Populaire
 {
-
+  margin: 5px;
   background-color: #f2f2f2;        /* couleur de fond */
   background-size: auto;
-  border-radius: 10px 10px 10px 10px;   /* arondi des angles de fond */
+  border-radius: 20px 20px 20px 20px;   /* arondi des angles de fond */
   
 }
 
@@ -226,44 +210,60 @@ border-radius: 1rem 1rem 0 0;
 {
   display: inline;
   float: left;      /*   texte affiche a droite de limage */
-  
-
-  min-width: 7rem;
-min-height: 12rem;
-  width: 15rem;
-
-
-  margin: 5px 0px 5px 5px;
-  border-radius: 1rem 0 0 1rem;
  
-    width: 50%;
-    height: 50%;
+  margin: 15px 13px -4px -3px;
+  padding: 3px;
+
+  border-radius: 18px 0 0 18px;
+ 
+    min-width: 8rem;
+min-height: 12rem;
+object-fit: cover;
+width: 40%;
 
 }
-.HebergementResultat
+
+.HebergementMarseil
 {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-content: space-around;
   flex-wrap: wrap;
-
-background-color: #f2f2f2;        /* couleur de fond */
-
-border-radius: 10px 10px 10px 10px;   /* arondi des angles de fond */
-
+  background-color: #f2f2f2;
+  border-radius: 20px 20px 20px 20px;
+  
+  margin: 5px;
 }
 
 
 .HebergementTitre{
 inline-size: 100%;
-margin-right: 15px;
+padding-left: 9px;
+margin: 10px;
 }
 
-.FichePopulaire 
+.PopulaireTitre
+{
+  inline-size: 100%;
+padding-left: 9px;
+margin: 10px;
+}
+.PopulaireTitreIcon
+{
+  padding-left: 65px;
+}
+.FichePopulaireLegende
+{
+  padding-top: 5px;
+}
+.NomPopulaire
+{
+  margin-top: 20px;
+  margin-bottom: -5px;
+}
+.FichePopulaire
 {
   margin: 15px;
   display: flex;
+  padding: 5px;
   justify-self: start;
   flex-direction: row;
  margin-block-start:  5px;
@@ -279,59 +279,87 @@ margin-right: 15px;
 }
 .FichePopulaireFigure
 {
-  display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 40px;
-  margin-inline-end: 40px;
+  
+  margin-block-start: -20px;
+  
+  margin-inline-start: -1px;
+  margin-inline-end: 4px;
 
 }
-.HebergementAfficherPlus
-{
-  display: inline-block;
-  justify-content: flex-end;
-}
-.FichePopulaireImage
-{
-  border-radius: 1rem 0 0 1rem;
- align-content: flex-start;
- margin: 3px;
 
-  object-fit: cover;
-  margin-block-end: 3px;
-  text-align-last: right;
-  
-  
-    
+.voirPlus
+{
+  display:block;
+  block-size: auto;
+  flex-wrap: wrap;
+ flex: 1 100%;
+
+  margin: 18px;
 }
+
+
 .ActiviteTitre
 {
- flex-wrap: wrap;
+  inline-size: 100%;
+  padding-left: 9px;
+  margin: 10px;
+}
+
 
 }
-.Activites
+.FicheActivite
 {
-  display: flex;
-flex-direction: row;
-  justify-content: space-between;
-  order: 0;
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 0 16px #0000002e;
+}
+
+.FicheActiviteTitre
+{
+  padding-left: 20px;
+  color: black;
+}
+
+.FicheActivite1
+{
+ 
+  display: inline-block;
+  margin: 12px;
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 0 16px #0000002e;
+  width: 19rem;
 
 }
-.FicheActiviteImageImg
+.FicheActivite2
+{
+ 
+  display: inline-block;
+  margin: 12px;
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 0 16px #0000002e;
+  width: 19rem;
+
+}
+.FicheActiviteImageImg1
 {
   display: flex;
-  flex-direction: row;
- flex-wrap: wrap;
-  justify-content: space-around;
-  min-block-size: 8rem;
-  max-block-size: 8rem;
-  width: 30%;
-  height: 30%;
-  max-width: 30%;
-  max-height: 30%;
+  flex-wrap: wrap;
+  width: 19rem;
+  height: 278px;
   object-fit: cover;
-  border-radius: 1.5rem;
+  border-radius: 1rem 1rem 0 0;
 
+}
+.FicheActiviteImageImg2
+{
+  display: flex;
+  flex-wrap: wrap;
+  width: 19rem;
+  height: 165px;
+  object-fit: cover;
+  border-radius: 1rem 1rem 0 0;
 }
 .Footer
 {
@@ -340,8 +368,8 @@ flex-direction: row;
   justify-content: space-around;
     max-width: 100%;
     width: 1640px;
-    margin: auto;
-    padding: 0 2rem;
+    margin: 0;
+   
     box-sizing: border-box;
 
 }
@@ -349,11 +377,34 @@ flex-direction: row;
 .FicheHebergementLegende,.FicheHebergementNuit,.FicheHebergementPrix,.FicheHebergementNote
 {
 color: black;
-text-align:center;
+margin-left: 12px;
+margin-bottom: 10px;
+
 }
-.FichePopulaireLegende ,.FichePopulaireNuit, .FichePopulairePrix,.FichePopulaireNote
+.FicheHebergementLegende{
+  margin-top: -14px;
+}
+.FichePopulaireLegende ,.FichePopulaireNuit
 {
  color: black;
+ margin: 1px;
+ margin-top: 1px;
+ padding-bottom: 5px;
 
+}
+.FichePopulaireNote{
+  color: black;
+  margin: 1px;
+  margin-top: 75px;
+  padding-bottom: 5px; 
  
+}
+.FichePopulairePrix
+{
+padding-top: 0px;
+}
+.FooterColoneLien
+{
+  color: black;
+  text-decoration: none;
 }

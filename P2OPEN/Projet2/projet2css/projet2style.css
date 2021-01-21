@@ -1,162 +1,186 @@
 
-.myBleu{
+.myBleu
+{
   color: #0065fc;
 }
-.myGris{
+
+.myGris
+{
   color: #f2f2f2;
 }
 
 body,main
 {
-  font-family: "Raleway", "Sans serif", "arial";
- 
+  font-family: "Raleway", "Sans serif" ; 
 }
 
-body
+body 
 {
   box-sizing: border-box;
-  
 }
-.Main{
+
+body a
+{
+  text-decoration:none;
+  color: black;
+}
+
+.Main
+{
   padding: 0 1rem;
 }
+
 .Header
 {
-  
-  display: flex;
-  justify-content: last baseline;
+  display: block;            
 }
 
 .Logo
 { 
-  margin-right: 80px;
   margin-top: 10px;
+}
+
+.NavLienHebergements,.NavLienActivites
+{
+margin: -1px 50px 0px 15px;
 }
 
 .NavSinscrire
 {
-
-  display: flex;
-  justify-content: space-around;
-  margin: 15px 0px 0px 15px;
+  
+    display: flex;
+    flex-direction: row-reverse;
+    
+    margin: -35px 0px 0px 35rem;
+    padding-bottom: 2rem;
 }
 
 
-.NavLienHebergements,.NavLienActivites
+.RechercheTitre
 {
-margin: 15px 50px 0px 15px;
-}
-
-.Sinscrire
-{  
-  margin: 0px;
+  margin: 22px 0 -5px 0;   
 }
 
 .RechercheFormLocalisationIcon
 {
- color: black;
+ display: block;
  background-color: #f2f2f2;
-background-size: auto;
-border-radius: 0.3rem 0rem 0rem 0.3rem ;
-padding: 6px;
-
-text-align: center;
+border-radius: 10px 0 0 10px ;
+padding: 15px;
 }
 
 .RechercheFormRechercheInput
 {
-
-border:solid 0px #f2f2f2;
+display: block;
+block-size: 46px; 
+padding: 20px;
+border:solid 1px #f2f2f2;
 border-right: transparent;
-
-vertical-align: bottom;
-block-size: 27px;
-display: inline-block;
-align-content: flex-start;
-align-items: baseline;
+font-family: "Raleway", "Sans serif", "arial";
+font-weight: bold;
 }
 
 .RechercheForm
 {
-  display: inline-flex;
-align-content: inline;
-
-
-border-bottom-right-radius: 3rem;
+display: inline-flex;
 block-size: 29px;
-border-radius: 0.4rem 0.4rem 0.4rem 0.4rem;
 }
 
 .RechercheFormButtonInput
 {
-  border: solid 5px #0065fc;
-  background-color: #0065fc;
-  border-radius: 0rem 0.3rem 0.3rem 0rem ;
-  color: white;
- background-origin: sizing 2px;;
+ display: block;
+ block-size: 46px;
+ width: 110px;
+ border: solid 5px #0065fc;
+ background-color: #0065fc;
+ border-radius: 0 10px 10px 0 ;
+ color: white;
+ background-origin: sizing 2px;
+ font-family: "Raleway", "Sans serif", "arial";
+ font-weight: bold;
+}
+
+.RechercheFormButtonInputText{
+  display: flex;
+  padding-top: 9px;
+  padding-left: 7px;
+}
+.RechercheFormButtonInputIcon
+  {
+  visibility:hidden;
+  }
+
+.RechercheFiltres
+{
+  padding-top: 30px;
+}
+
+.RechercheFiltresTitre
+{
+margin: 0px 5px 0px 5px;
+display: inline-flex;
+}
+
+.RechercheFiltresFiltreTitre
+{
+padding: 0px 5px 0px 5px 
 }
 
 .RechercheFiltresFiltre
 {
-  border: solid 2px #f2f2f2;
-  border-radius: 2rem;
-
+border: solid 2px #f2f2f2;
+border-radius: 2rem;
 display: inline-flex;
 align-content: space-between;
-
-box-sizing: 20%;
-margin: 1rem;
+margin: 0.3rem;
 align-items: center;
 }
 
 .RechercheFiltresFiltreIcon      /* icon des filtres */
 {    
-  background-color: #DEEBFF;
-  border-radius: 100%;
-  height: 3rem;
-  width: 3rem;
-  min-height: 3.5rem;
-  min-width: 3.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: -2px;
+  margin: -1px;
+  background-color: #DEEBFF;
+  border-radius: 100%;
+  min-height: 39px;
+  min-width: 39px;
 }
-.RechercheFiltresFiltreTitre
-{
-margin-left: 15px;
-margin-right: 15px;
-}
+
 .RechercheResultat
 {
-  display: inline-flex;
+display: flex;
 align-items: center;
-  
+margin-bottom: 10px;
 }
 
 .RechercheResultatIcon
 {
-
-border:solid 1px #f2f2f2;
-  border-radius: 45%;
-  padding: 0.5rem;
-  border-radius: 100%;
-  height: 1rem;
-  width: 1rem;
-  min-height: 0.5rem;
-  min-width: 0.5rem;
   display: flex;
-  align-items: center;
   justify-content: center;
   margin: 4px;
-
+  border: solid 1px #f2f2f2;
+  padding: 0.5rem;
+  border-radius: 100%;
+  min-height: 1rem;
+  min-width: 1rem;
 }
-.RechercheFiltresTitre
+
+
+.HebergementResultat
 {
-margin: 0px 15px 0px 15px;
-display: inline-flex;
+
+  padding:0px 23px 0px 23px;
 }
 
+.HebergementTitre{
+
+padding-left: 26px;
+padding-top: 30px;
+margin: 10px 0px 0px 10px;
+
+}
 
 
 
@@ -166,40 +190,79 @@ display: inline-flex;
     justify-content: space-between;
     order: 0;
     align-self: auto;
-  
-    
   }
+
   .FicheHebergementFigure
   {
-    margin: 3px;
+  margin: 3px;
     
   }
-  .FicheHebergement{
-display: inline-block;
 
+  .FicheHebergement
+  {
+  display: inline-block;
   margin: 12px;
-
   background-color: white;
- 
   border-radius: 19.5px;
   box-shadow: 0 0 16px #0000002e;  /* ombre du fond */
-  width: 19rem;
+  width: 16rem;
 }
 
 .FicheHebergementImage
 {
-  
   max-block-size: 9rem;
   width: 100%;
   border-radius: 18px 18px 0 0;
-
 }
 
 
 
+
+
+.HebergementMarseil
+{
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #f2f2f2;
+  border-radius: 20px 20px 20px 20px;
+  margin-right: 15px;
+}
+
+
+.FicheHebergementLegende,.FicheHebergementNuit,.FicheHebergementPrix,.FicheHebergementNote
+{
+
+margin-left: 12px;
+margin-bottom: 10px;
+
+}
+.FicheHebergementLegende{
+  margin-top: -14px;
+}
+
+.voirPlus
+{
+  display:block;
+  block-size: auto;
+  flex-wrap: wrap;
+ flex: 1 100%;
+
+  margin: 18px;
+}
+
+.PopulaireTitre
+{
+  display: flex;
+  justify-content: space-between;
+  padding-right: 22px;
+  padding-left: 25px;
+  padding-top: 30px;
+  margin: 8px;
+}
+
 .Populaire
 {
-  margin: 5px;
+ margin-left: 15px;
   background-color: #f2f2f2;        /* couleur de fond */
   background-size: auto;
   border-radius: 20px 20px 20px 20px;   /* arondi des angles de fond */
@@ -219,32 +282,8 @@ display: inline-block;
     min-width: 8rem;
 min-height: 12rem;
 object-fit: cover;
-width: 40%;
+width: 30%;
 
-}
-
-.HebergementMarseil
-{
-  display: flex;
-  flex-wrap: wrap;
-  background-color: #f2f2f2;
-  border-radius: 20px 20px 20px 20px;
-  
-  margin: 5px;
-}
-
-
-.HebergementTitre{
-inline-size: 100%;
-padding-left: 9px;
-margin: 10px;
-}
-
-.PopulaireTitre
-{
-  inline-size: 100%;
-padding-left: 9px;
-margin: 10px;
 }
 .PopulaireTitreIcon
 {
@@ -261,21 +300,13 @@ margin: 10px;
 }
 .FichePopulaire
 {
-  margin: 15px;
-  display: flex;
+  margin: 25px 30px 30px 30px;
   padding: 5px;
-  justify-self: start;
-  flex-direction: row;
- margin-block-start:  5px;
   background-color: white;
- background-attachment: fixed;
- max-width: 23rem;
- min-width: 20rem;
- min-height: 7rem;
- max-height: 13rem;
-    border-radius: 1.25rem;
-   
-  
+  max-width: 22rem;
+  min-width: 21rem;
+  border-radius: 1.25rem; 
+  box-shadow: 0 0 16px #0000002e;
 }
 .FichePopulaireFigure
 {
@@ -287,31 +318,51 @@ margin: 10px;
 
 }
 
-.voirPlus
-{
-  display:block;
-  block-size: auto;
-  flex-wrap: wrap;
- flex: 1 100%;
 
-  margin: 18px;
+.FichePopulaireLegende ,.FichePopulaireNuit
+{
+ 
+ margin: 1px;
+ margin-top: 1px;
+ padding-bottom: 5px;
+
+}
+.FichePopulaireNote{
+ 
+  margin: 1px;
+  margin-top: 75px;
+  padding-bottom: 5px; 
+ 
+}
+.FichePopulairePrix
+{
+padding-top: 0px;
+}
+.Activites{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 
 .ActiviteTitre
 {
-  inline-size: 100%;
-  padding-left: 9px;
-  margin: 10px;
+  display:inline-block;
+ flex: 1 100%;
 }
 
 
 }
 .FicheActivite
 {
+  display: flex;
+  flex: 4 1;
+  
+  margin: 12px;
   background-color: white;
   border-radius: 1rem;
   box-shadow: 0 0 16px #0000002e;
+  width: 19.5rem;
 }
 
 .FicheActiviteTitre
@@ -323,88 +374,403 @@ margin: 10px;
 .FicheActivite1
 {
  
-  display: inline-block;
+
   margin: 12px;
   background-color: white;
   border-radius: 1rem;
   box-shadow: 0 0 16px #0000002e;
-  width: 19rem;
+  width: 19.5rem;
 
 }
+.ColoneA1{
+  display: flex;
+  flex-direction: column;
+ 
+}
+.ColoneA2{
+  display: flex;
+  flex-direction: column;
+  
+ 
+}
+.ColoneA3
+{
+  display: flex;
+  flex-direction: column;
+}
+
+
+.ColoneA4
+{
+  display: flex;
+  flex-direction: column;
+}
+
+
 .FicheActivite2
 {
  
-  display: inline-block;
   margin: 12px;
   background-color: white;
   border-radius: 1rem;
   box-shadow: 0 0 16px #0000002e;
-  width: 19rem;
+  width: 19.5rem;
 
 }
 .FicheActiviteImageImg1
 {
-  display: flex;
-  flex-wrap: wrap;
-  width: 19rem;
-  height: 278px;
+  
+  width: 19.5rem;
+  height: 392px;
   object-fit: cover;
   border-radius: 1rem 1rem 0 0;
 
 }
 .FicheActiviteImageImg2
 {
-  display: flex;
-  flex-wrap: wrap;
-  width: 19rem;
+  
+  width: 19.5rem;
   height: 165px;
+  object-fit:cover;
+  border-radius: 1rem 1rem 0 0;
+}
+.FicheActiviteImageImg3
+{
+  width: 19.5rem;
+  height: 140px;
   object-fit: cover;
   border-radius: 1rem 1rem 0 0;
 }
 .Footer
 {
-  background-color: #f2f2f2;   
+  background-color: #f2f2f2;
   display: flex;
   justify-content: space-around;
-    max-width: 100%;
-    width: 1640px;
-    margin: 0;
-   
-    box-sizing: border-box;
-
+  padding-bottom: 15px;
+  margin-top: 50px;
+  padding-top: 15px;
 }
 
-.FicheHebergementLegende,.FicheHebergementNuit,.FicheHebergementPrix,.FicheHebergementNote
+
+.FooterColone
 {
-color: black;
-margin-left: 12px;
-margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  padding-right: 220px;
+}
 
-}
-.FicheHebergementLegende{
-  margin-top: -14px;
-}
-.FichePopulaireLegende ,.FichePopulaireNuit
-{
- color: black;
- margin: 1px;
- margin-top: 1px;
- padding-bottom: 5px;
 
-}
-.FichePopulaireNote{
-  color: black;
-  margin: 1px;
-  margin-top: 75px;
-  padding-bottom: 5px; 
+
+
+
+
+
+
+
+@media all and (min-width: 600px){
+  .RechercheFormButtonInputIcon
+  {
+  display: none;
+  
+  }
+  }
+
+
+
+
+
+
+@media all and (max-width: 600px) 
+
+{@media all and (min-width:300px )
+  {
+
+    .body
+    {
+     padding: 0 3px;
+     max-width: 29rem;
+    }
+
+    .Header 
+    {
+     max-width: 32rem;
+     display: inline-block;
+     padding: 0 0rem;
+    }
+
+    .Logo 
+    {
+     margin-top: 0px;
+     block-size: 3rem;
+     width: 6rem;
+     margin-right: 7rem;
+    }
+
+    .Sinscrire
+    {
+     display: inline-flex;
+     align-items: flex-start;
+    }
+    .HeaderNav
+    {
+     display: inline-flex;
+     justify-content: space-between;
+    }
+
+    .NavLienHebergements
+    {
+     display: flex;
+     justify-content: start;
+     order: 2;
+     margin-left: 2rem;
+    }
+
+    .NavLienActivites
+    {
+     display: flex;
+     order: 3;
+     display: inline-flex;
+     order: 3;
+     margin-left: 4rem;
+    }
+
+    .RechercheFormButtonInput 
+    {
+     display: block;
+     block-size: 46px;
+     width: 50px;
+     border: solid 5px #0065fc;
+     background-color: #0065fc;
+     border-radius: 10px 10px 10px 10px;
+     color: white;
+     background-origin: sizing 2px;
+     font-family: "Raleway", "Sans serif", "arial";
+     font-weight: bold;
+     margin-left: -7px;
+    }
+    .RechercheFormButtonInputText
+    {
+     display: none;
+    }
+
+    .RechercheFormButtonInputIcon
+    {
+     visibility: visible;
+    }
+
+
+    .Hebergements 
+    {
+     display: flex;
+     flex-direction: column-reverse;
+     max-width: 31rem;
+     justify-content: center;
+     align-items: center;
+    } 
+
+
+    .RechercheTitre
+    {
+     block-size: 4rem;
+     width: 23rem;
+    }
+
+    .RechercheFiltresFiltreTitre
+    {
+     margin-left: 15px;
+     margin-right: 15px;
+    }
+
+    .Recherche
+    {
+     margin-left: -15px;
+    }
+
+    .RechercheResultatText
+    {
+     width: 20rem;
+    }
+
+    .HebergementResultat 
+    {
+     flex-direction: column;
+     width: 30rem;
+     display: flex;
+     padding: 1px 3px 0px 3px;
+     background:white;
+    }
  
+ 
+    .FooterColone
+    {
+     display: flex;
+     flex-direction: column;
+     padding: 1px;
+    }
+
+    .RechercheHeader
+    {
+     margin-left: 4px;
+    }
+   .RechercheFiltresTitre 
+    {
+     margin: 0px 5px 0px 5px;
+     display: inline-flex;
+     width: 20rem;
+    }
+    .RechercheFiltres
+    {
+     display: block;
+     width: 23rem;
+  
+    }
+  
+    .PopulaireTitre
+    {
+     padding-left: 27px; 
+    }
+    
+    .Populaire
+    {
+     border-radius: inherit;
+     margin-left: -25px;
+     background-color: #f2f2f2;
+     background-size: auto;
+     min-width: 31rem;
+    }
+
+
+    .FichePopulaire 
+    {
+     margin: 25px 5px 25px 34px;
+     padding: 5px;
+     background-color: white;
+     max-width: 27.5rem;
+     min-width: 27.5rem;
+     min-height: 12rem;
+     border-radius: 1.25rem;
+     box-shadow: 0 0 16px #0000002e;
+    }
+
+    .FichePopulaireImage 
+    {
+     display: inline;
+     float: left;
+     margin: 15px 13px -4px -3px;
+     padding: 3px;
+     border-radius: 18px 0 0 18px;
+     min-width: 11rem;
+     max-width: 11rem;
+     min-height: 12.2rem;
+     max-height: 12.2rem;
+     object-fit: cover;
+     width: 30%;
+    }
+ 
+    .NomPopulaire 
+    {
+     margin-top: 20px;
+     margin-bottom: -5px;
+     margin-right: 5rem;
+    }
+  
+    .HebergementResultat 
+    {
+     flex-direction: column;
+     width: 30rem;
+     display: flex;
+     padding: 1px 0px 0px 20px;
+     background: white;
+    }
+   
+    .HebergementMarseil
+    {
+     display: flex;
+     flex-wrap: wrap;
+     background-color: white;
+     border-radius: 20px 20px 20px 20px;
+     margin-right: 15px;
+    }
+
+    .FicheHebergement 
+    {
+     display: inline-block;
+     margin: 12px;
+     background-color: white;
+     border-radius: 19.5px;
+     box-shadow: 0 0 16px #0000002e;
+     min-width: 28rem;
+     max-width: 28rem;
+    }
+
+
+
+    .FicheHebergementImage 
+    {
+     max-block-size: 9rem;
+     width: 100%;
+     border-radius: 18px 18px 0 0;
+     object-fit: cover;
+    }
+  
+    .FicheActivite
+    { 
+     min-width: 28rem;
+     max-width: 28rem;
+     max-height: 12rem;
+     min-height: 12rem;
+    }
+  
+    .Activites 
+    {
+     display: flex;
+     flex-direction: column;
+     max-width: 30rem;
+     margin-left: -24px;
+    }
+
+   .FicheActiviteImageImg
+    {
+     min-width: 28rem;
+     max-width: 28rem;
+     max-height: 8rem;
+     min-height: 8rem;
+    
+    }
+
+
+   .ActiviteTitre
+    {
+     display: inline-block;
+     flex: 1 100%;
+     margin-left: 16px;
+    }
+
+
+
+    .Footer
+    {
+     display: flex;
+     flex-direction: column;
+     width: 32rem;
+     padding-left: 39px;
+     margin-top: 4rem;
+     margin-left: -1rem;
+     padding-bottom: 15px;
+    }
+  
+
+
+
+
+
+
+
+
+
+
+  }
+
 }
-.FichePopulairePrix
-{
-padding-top: 0px;
-}
-.FooterColoneLien
-{
-  color: black;
-  text-decoration: none;
-}
+
+

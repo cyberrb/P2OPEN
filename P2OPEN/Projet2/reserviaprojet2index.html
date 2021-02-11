@@ -9,7 +9,7 @@
 
     <meta charset="UTF-8">
     <!-- Codage des caractères nous spécifions comment la séquence d'octets doit être interprétée -->
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./projet2css/projet2style.css" /> <!--  lins vers la page de style css  -->
     <!--load all styles toute les icone -->
     <link href="./favicon/css/all.css" rel="stylesheet">
@@ -27,48 +27,49 @@
 
     <!-- EN-TETE  header -->
     <header class="Header">
-        <span class="LogoSinscrire">
+       
         <img class="Logo" src="./images/logo/Reservia.svg" alt="logoReservia"> <!-- Logo -->
 
-       <div class="NavSinscrire">    
-        <a href="#" class="Sinscrire">S'inscrire</a> <!-- formulaire d'inscription -->
-       </span>    
-       <nav class="HeaderNav">
+        <div class="NavSinscrire">
+        
+            <nav class="HeaderNav">
                 <!-- liens de navigation ancres -->
-                 <a href="#Activites" class="NavLienActivites">Activités</a> <!-- lien de navigation ancre-->
+
                 <a href="#Hebergements" class="NavLienHebergements">Hébergements</a> <!-- lien de navigation ancre-->
-               
+                <a href="#Activites" class="NavLienActivites">Activités</a> <!-- lien de navigation ancre-->
             </nav>
-        </div>  
+               <a href="#" class="Sinscrire">S'inscrire</a> <!-- formulaire d'inscription -->
+        </div>
+
     </header>
 
     <!--  HEADER FIN  BLOCK 1                  header                        EN-TETE                                      FIN  BLOCK 1      -->
 
 
     <!-- MAIN -->
-    <main class="Main">
+    <main>
         <!--   RECHERCHE SECTION BLOCK 2  DEBUT         SECTION RECHERCHE :   LIEUX RECHERCHER ET FILTRES                     DEBUT  BLOCK 2  -->
 
-        <section class="Recherche">
+        <section>
             <header class="RechercheHeader">
                 <h1 class="RechercheTitre">Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p class="RechercheSousTitre">En plein centre ville ou en pleine nature</p>
             </header>
 
-            <!-- champ de recherche    search = un champ texte sur une ligne pour des termes de recherche -->
+            <!-- champ de recherche    search = un champ texte sur une ligne pour des termes de recherche donc span -->
 
-            <form class="RechercheForm">
+            <div class="RechercheForm">
                 <span class="RechercheFormIcon">
                     <i class="fas fa-map-marker-alt RechercheFormLocalisationIcon"></i>
                 </span>
                 <input class="RechercheFormRechercheInput" type="search" placeholder="Marseille, France">
-                </div>
+                
                 <button class="RechercheFormButtonInput">
 
-                  <span class="RechercheFormButtonInputText">Rechercher</span> 
-                   <i class="RechercheFormButtonInputIcon  fas fa-search" ></i><!--  icone petit ecran fas fa-search -->
+                    <span class="RechercheFormButtonInputText">Rechercher</span>
+                    <i class="RechercheFormButtonInputIcon  fas fa-search"></i><!--  icone petit ecran fas fa-search -->
                 </button>
-            </form>
+            </div>
 
             <!-- Filtres -->
             <div class="RechercheFiltres">
@@ -335,8 +336,8 @@
 
 
         <section class="Activites" id="Activites">
-          <h2 class="ActiviteTitre">Activités à Marseille</h2>
-           <div class="ColoneA ColoneA1">
+            <h2 class="ActiviteTitre">Activités à Marseille</h2>
+            <div class="ColoneA ColoneA1">
                 <a href="#" class="FicheActivite FicheActivite1">
                     <div class="FicheActiviteImage">
                         <img class="FicheActiviteImageImg FicheActiviteImageImg1"
@@ -346,28 +347,30 @@
                     <h3 class="FicheActiviteTitre">Vieux Port</h3>
                 </a>
             </div>
+            <div class="C2">
+                <div class="ColoneA ColoneA2">
+                    <a href="#" class="FicheActivite FicheActivite2">
+                        <div class="FicheActiviteImage">
+                            <img class="FicheActiviteImageImg FicheActiviteImageImg2"
+                                src="./images/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
+                                alt="Rochers mirador en pierre">
+                        </div>
+                        <h3 class="FicheActiviteTitre">Fort de Pomègues</h3>
+                    </a>
+                </div>
 
-            <div class="ColoneA ColoneA2">
-                <a href="#" class="FicheActivite FicheActivite2">
-                    <div class="FicheActiviteImage">
-                        <img class="FicheActiviteImageImg FicheActiviteImageImg2"
-                            src="./images/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
-                            alt="Rochers mirador en pierre">
-                    </div>
-                    <h3 class="FicheActiviteTitre">Fort de Pomègues</h3>
-                </a>
-
-                  <a href="#" class="FicheActivite FicheActivite2">
-                    <div class="FicheActiviteImage">
-                        <img class="FicheActiviteImageImg FicheActiviteImageImg3"
-                            src="./images/activites/2_large/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
-                            alt="longue vue murail dans l'eau vue sur mer a l'orizon">
-                    </div>
-                    <h3 class="FicheActiviteTitre">Îles du Frioul</h3>
-                </a>
+                <div class="ColoneA ColoneA2">
+                    <a href="#" class="FicheActivite FicheActivite2">
+                        <div class="FicheActiviteImage">
+                            <img class="FicheActiviteImageImg FicheActiviteImageImg3"
+                                src="./images/activites/2_large/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
+                                alt="longue vue murail dans l'eau vue sur mer a l'orizon">
+                        </div>
+                        <h3 class="FicheActiviteTitre">Îles du Frioul</h3>
+                    </a>
+                </div>
             </div>
-
-                  <div class="ColoneA ColoneA3">
+            <div class="ColoneA ColoneA3">
                 <a href="#" class="FicheActivite FicheActivite1">
                     <div class="FicheActiviteImage">
                         <img class="FicheActiviteImageImg FicheActiviteImageImg1"
@@ -376,29 +379,30 @@
                     </div>
                     <h3 class="FicheActiviteTitre">Parc National des Calanques</h3>
                 </a>
-</div>
-              
-     
-          <div class="ColoneA ColoneA4">
-                <a href="#" class="FicheActivite FicheActivite2 ">
-                    <div class="FicheActiviteImage">
-                        <img class="FicheActiviteImageImg FicheActiviteImageImg3"
-                            src="./images/activites/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg"
-                            alt="vue sur toit de la ville et en second plan percher sur la coline avec notre dame de la garde au somet">
-                    </div>
-                    <h3 class="FicheActiviteTitre ">Notre-Dame-de-la-Garde</h3>
-                </a>
-            
+            </div>
 
-            
-                <a href="#" class="FicheActivite FicheActivite2">
-                    <div class="FicheActiviteImage">
-                        <img class="FicheActiviteImageImg FicheActiviteImageImg2"
-                            src="./images/activites/2_large/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
-                            alt="chateau monument parc grande fontaine">
-                    </div>
-                    <h3 class="FicheActiviteTitre">Parc Longchamp</h3>
-                </a>
+            <div class="C4">
+                <div class="ColoneA ColoneA4">
+                    <a href="#" class="FicheActivite FicheActivite2 ">
+                        <div class="FicheActiviteImage">
+                            <img class="FicheActiviteImageImg FicheActiviteImageImg3"
+                                src="./images/activites/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+                                alt="vue sur toit de la ville et en second plan percher sur la coline avec notre dame de la garde au somet">
+                        </div>
+                        <h3 class="FicheActiviteTitre ">Notre-Dame-de-la-Garde</h3>
+                    </a>
+                </div>
+
+                <div class="ColoneA ColoneA4">
+                    <a href="#" class="FicheActivite FicheActivite2">
+                        <div class="FicheActiviteImage">
+                            <img class="FicheActiviteImageImg FicheActiviteImageImg2"
+                                src="./images/activites/2_large/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
+                                alt="chateau monument parc grande fontaine">
+                        </div>
+                        <h3 class="FicheActiviteTitre">Parc Longchamp</h3>
+                    </a>
+                </div>
             </div>
         </section>
 
